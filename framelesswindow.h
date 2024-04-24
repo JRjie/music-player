@@ -19,19 +19,20 @@ protected:
     void mouseReleaseEvent(QMouseEvent * event);
     void mouseMoveEvent(QMouseEvent * event);
 private:
+    void setWindowGeometry(const QPointF &position);
     void setCursorIcon();
     MousePosition getMousePositon(QPointF &position);
 
     //缩放边距
-    int step = 8;
+    int step = 5;
     //鼠标位置
-    MousePosition mouse_position = NORMAL;
+    MousePosition mousePosition = NORMAL;
     //起始位置
-    QPointF start_position;
+    QPointF startPosition;
     //旧位置
-    QPointF old_Position;
+    QPointF oldPosition;
     //旧大小
-    QSize old_size;
+    QSize oldSize;
 };
 
 #endif // FRAMELESSWINDOW_H

@@ -2,10 +2,12 @@ import QtQuick
 import qc.window
 
 FramelessWindow {
-    width: 640
-    height: 480
-    minimumWidth: 1010
-    minimumHeight: 710
+    x: 300
+    y: 300
+    width: 1280
+    height: 720
+    minimumWidth: 640
+    minimumHeight: 480
     visible: true
     title: qsTr("Hello World")
 }
